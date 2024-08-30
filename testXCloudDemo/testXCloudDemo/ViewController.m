@@ -20,7 +20,7 @@
     self.view.backgroundColor = UIColor.orangeColor;
     [self.view addSubview:self.testLab];
     CLLocationCoordinate2D *coords = malloc(sizeof(CLLocationCoordinate2D) * 2);
-    
+    CLLocationCoordinate2D *coord2s = malloc(sizeof(CLLocationCoordinate2D) * 2);
     [self.view addSubview:self.testBtn];
 }
 
