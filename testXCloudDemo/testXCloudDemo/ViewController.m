@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import <CoreLocation/CoreLocation.h>
 @interface ViewController ()
 @property(nonatomic, strong)UILabel *testLab;
 @end
@@ -18,6 +18,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.orangeColor;
     [self.view addSubview:self.testLab];
+    CLLocationCoordinate2D *coords = malloc(sizeof(CLLocationCoordinate2D) * 2);
 }
 
 -(UILabel *)testLab{
