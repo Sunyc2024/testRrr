@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3BAFB52C81C51A00BDD07D /* testXCloudDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BAFB42C81C51A00BDD07D /* testXCloudDemoUITests.m */; };
+		CB3BAFB72C81C51A00BDD07D /* testXCloudDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BAFB62C81C51A00BDD07D /* testXCloudDemoUITestsLaunchTests.m */; };
 		CB802AD72C7F228F0087CBDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB802AD62C7F228F0087CBDD /* AppDelegate.m */; };
 		CB802ADA2C7F228F0087CBDD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB802AD92C7F228F0087CBDD /* SceneDelegate.m */; };
 		CB802ADD2C7F228F0087CBDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB802ADC2C7F228F0087CBDD /* ViewController.m */; };
@@ -16,7 +18,20 @@
 		CB802AE82C7F22910087CBDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB802AE72C7F22910087CBDD /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB3BAFB82C81C51A00BDD07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB802ACA2C7F228F0087CBDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB802AD12C7F228F0087CBDD;
+			remoteInfo = testXCloudDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CB3BAFB22C81C51A00BDD07D /* testXCloudDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testXCloudDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BAFB42C81C51A00BDD07D /* testXCloudDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testXCloudDemoUITests.m; sourceTree = "<group>"; };
+		CB3BAFB62C81C51A00BDD07D /* testXCloudDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testXCloudDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
 		CB802AD22C7F228F0087CBDD /* testXCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testXCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB802AD52C7F228F0087CBDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB802AD62C7F228F0087CBDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB3BAFAF2C81C51A00BDD07D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB802ACF2C7F228F0087CBDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3BAFB32C81C51A00BDD07D /* testXCloudDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BAFB42C81C51A00BDD07D /* testXCloudDemoUITests.m */,
+				CB3BAFB62C81C51A00BDD07D /* testXCloudDemoUITestsLaunchTests.m */,
+			);
+			path = testXCloudDemoUITests;
+			sourceTree = "<group>";
+		};
 		CB802AC92C7F228F0087CBDD = {
 			isa = PBXGroup;
 			children = (
 				CB802AD42C7F228F0087CBDD /* testXCloudDemo */,
+				CB3BAFB32C81C51A00BDD07D /* testXCloudDemoUITests */,
 				CB802AD32C7F228F0087CBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				CB802AD22C7F228F0087CBDD /* testXCloudDemo.app */,
+				CB3BAFB22C81C51A00BDD07D /* testXCloudDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +112,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB3BAFB12C81C51A00BDD07D /* testXCloudDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3BAFBC2C81C51A00BDD07D /* Build configuration list for PBXNativeTarget "testXCloudDemoUITests" */;
+			buildPhases = (
+				CB3BAFAE2C81C51A00BDD07D /* Sources */,
+				CB3BAFAF2C81C51A00BDD07D /* Frameworks */,
+				CB3BAFB02C81C51A00BDD07D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3BAFB92C81C51A00BDD07D /* PBXTargetDependency */,
+			);
+			name = testXCloudDemoUITests;
+			productName = testXCloudDemoUITests;
+			productReference = CB3BAFB22C81C51A00BDD07D /* testXCloudDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CB802AD12C7F228F0087CBDD /* testXCloudDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB802AEB2C7F22910087CBDD /* Build configuration list for PBXNativeTarget "testXCloudDemo" */;
@@ -105,6 +156,10 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					CB3BAFB12C81C51A00BDD07D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CB802AD12C7F228F0087CBDD;
+					};
 					CB802AD12C7F228F0087CBDD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -124,11 +179,19 @@
 			projectRoot = "";
 			targets = (
 				CB802AD12C7F228F0087CBDD /* testXCloudDemo */,
+				CB3BAFB12C81C51A00BDD07D /* testXCloudDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB3BAFB02C81C51A00BDD07D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB802AD02C7F228F0087CBDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +205,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB3BAFAE2C81C51A00BDD07D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3BAFB72C81C51A00BDD07D /* testXCloudDemoUITestsLaunchTests.m in Sources */,
+				CB3BAFB52C81C51A00BDD07D /* testXCloudDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB802ACE2C7F228F0087CBDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB3BAFB92C81C51A00BDD07D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB802AD12C7F228F0087CBDD /* testXCloudDemo */;
+			targetProxy = CB3BAFB82C81C51A00BDD07D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB802ADE2C7F228F0087CBDD /* Main.storyboard */ = {
@@ -175,6 +255,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB3BAFBA2C81C51A00BDD07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67ZG4C7932;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syc.testXCloudDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testXCloudDemo;
+			};
+			name = Debug;
+		};
+		CB3BAFBB2C81C51A00BDD07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67ZG4C7932;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syc.testXCloudDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testXCloudDemo;
+			};
+			name = Release;
+		};
 		CB802AE92C7F22910087CBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB3BAFBC2C81C51A00BDD07D /* Build configuration list for PBXNativeTarget "testXCloudDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3BAFBA2C81C51A00BDD07D /* Debug */,
+				CB3BAFBB2C81C51A00BDD07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CB802ACD2C7F228F0087CBDD /* Build configuration list for PBXProject "testXCloudDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

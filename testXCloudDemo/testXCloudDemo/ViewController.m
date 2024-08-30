@@ -9,6 +9,7 @@
 #import <CoreLocation/CoreLocation.h>
 @interface ViewController ()
 @property(nonatomic, strong)UILabel *testLab;
+@property(nonatomic, strong)UIButton *testBtn;
 @end
 
 @implementation ViewController
@@ -19,6 +20,8 @@
     self.view.backgroundColor = UIColor.orangeColor;
     [self.view addSubview:self.testLab];
     CLLocationCoordinate2D *coords = malloc(sizeof(CLLocationCoordinate2D) * 2);
+    
+    [self.view addSubview:self.testBtn];
 }
 
 -(UILabel *)testLab{
@@ -30,6 +33,21 @@
         _testLab.textAlignment = NSTextAlignmentCenter;
     }
     return _testLab;
+}
+
+-(UIButton *)testBtn{
+    if (!_testBtn) {
+        _testBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+        _testBtn.center = CGPointMake(self.view.center.x, self.view.center.y + 50);
+        [_testBtn setTitle:@"点击" forState:UIControlStateNormal];
+        [_testBtn setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+        [_testBtn addTarget:self action:@selector(testBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _testBtn;
+}
+
+-(void)testBtnAction{
+    NSLog(@"点击了按钮");
 }
 
 @end
